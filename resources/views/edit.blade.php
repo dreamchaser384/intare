@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet"href="\edit.css">
 </head>
 <body>
+    <div class="edit">
     <fieldset>
         <h1>you can edit product info</h1>
 <form action="{{route('update',$data->id)}}"method="post">
@@ -24,9 +26,10 @@
     <button type="submit">send data</button><br><br> 
     <label>go back</label>
     <ul>
-        <li><a href="{{route('status')}}">go back</a></li>
+        <li><a href="{{route('status')}}" style="background-color:purple;color:white;">go back</a></li>
 </ul>
 
 </fieldset>
+</div>
 </body>
 </html>
